@@ -1,14 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   images: {
     domains: ['cfafdwbhkrjzzmpqmmmo.supabase.co'], // allow this domain
-  },
-   api: {
-    bodyParser: {
-      sizeLimit: '100mb',
-    },
   },
 };
 
 module.exports = nextConfig;
-

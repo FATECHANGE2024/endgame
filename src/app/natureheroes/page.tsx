@@ -1,5 +1,6 @@
 'use client';
 
+import Image from "next/image";
 import {
   FaBars,
   FaTimes,
@@ -87,9 +88,12 @@ export default function SamadhanSetu() {
       {/* Header */}
       <header className="header-content">
         <div className="logo-container">
-          <img
+          <Image
             src="https://i.ibb.co/qZzvg53/Whats-App-Image-2025-09-09-at-08-13-15-f871567f-removebg-preview.png"
             alt="Samadhan Setu Logo"
+            width={60}
+            height={60}
+            className="rounded-full"
           />
           <div className="logo">Samadhan Setu</div>
         </div>
@@ -152,7 +156,12 @@ export default function SamadhanSetu() {
           </h2>
 
           <div className="hero-card">
-            <img src="https://via.placeholder.com/300x200" alt="Hero" />
+            <Image
+              src="https://via.placeholder.com/300x200"
+              alt="Hero"
+              width={300}
+              height={200}
+            />
             <h3>Anika Sharma</h3>
             <p>Environmental Activist</p>
             <div className="hero-location">
