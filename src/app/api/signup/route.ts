@@ -1,5 +1,8 @@
+export const runtime = 'nodejs';
+
 import { NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
+
 
 // ✅ Create Supabase client with service role (server-side only!)
 const supabase = createClient(
